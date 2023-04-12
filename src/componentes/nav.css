@@ -42,6 +42,11 @@ color: #737373;
    
     width: 100%;
 }
+.nav{
+    display: flex;
+   
+    width: 100%;
+}
 .links{
     display: flex;
     justify-content: space-between;
