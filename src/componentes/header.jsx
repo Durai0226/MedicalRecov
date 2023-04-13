@@ -16,12 +16,12 @@ const NavBar = () => {
         <h3>MedicalRecov</h3>
         <div onClick={handleClick} className="hamburger-menu">
           {open ? (
-            <FiMenu className="menu-icon"></FiMenu>
-          ) : (
             <FiX className="close-icon"></FiX>
+          ) : (
+            <FiMenu className="menu-icon"></FiMenu>
           )}
         </div>
-        <nav onClick={closeMenu} className={open ? "nav-active" : "nav"}>
+        <nav onClick={closeMenu} className={!open ? "nav-active" : "nav"}>
           <div className="links">
             <a href="/#">Home</a>
             <a href="/#">Product</a>
